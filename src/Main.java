@@ -18,7 +18,7 @@ public class Main {
         Author authorTwo = new Author("Алексей", "Шаурминов");
         Book bookTwo = new Book("Велосипед", 2022, authorTwo);
         System.out.println("Название книги - " + bookTwo.getNameBook());
-        System.out.println(authorTwo); //Метод toString
+        System.out.println(authorTwo);  //Метод toString
         // System.out.println("Автор книги - " + authorTwo.getName() + " " + authorTwo.getLastName());
         System.out.println("Год публикации - " + bookTwo.getYearPublicationBook());
         System.out.println();
