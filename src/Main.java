@@ -3,30 +3,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        Author authorOne = new Author("Иван", "Гумманитариев");
-        Book bookOne = new Book("Я программист", 2024, authorOne);
-        System.out.println("Название книги - " + bookOne.getNameBook());
-        //System.out.println("Автор книги = " + authorOne);
-        System.out.println("Автор книги - " + authorOne.getName() + " " + authorOne.getLastName());
-        System.out.println("Год публикации - " + bookOne.getYearPublicationBook());
-        bookOne.setYearPublicationBook(2023);
-        System.out.println("Изменённая дата - " + bookOne.getYearPublicationBook());
-
-        System.out.println();
-
-        Author authorTwo = new Author("Алексей", "Шаурминов");
-        Book bookTwo = new Book("Велосипед", 2022, authorTwo);
-        System.out.println("Название книги - " + bookTwo.getNameBook());
-        System.out.println(authorTwo);  //Метод toString
-        // System.out.println("Автор книги - " + authorTwo.getName() + " " + authorTwo.getLastName());
-        System.out.println("Год публикации - " + bookTwo.getYearPublicationBook());
-        System.out.println();
-        System.out.println("Метод equals - " + authorOne.equals(authorTwo));
-        //Метод equals
-        System.out.println();
-        System.out.println("Метод hashCode - " + authorTwo.hashCode() + " " + authorOne.hashCode());
-        //Метод hashCode
-
+        for (int i = 1; i <= 5; i++) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.println("i = " + i);
+        }
     }
 }
